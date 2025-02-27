@@ -3,7 +3,12 @@ import numpy as np
 
 # Read the image
 # img = cv2.imread('eyes.jpg', cv2.IMREAD_COLOR)
-img = cv2.imread('circle.jpg', cv2.IMREAD_COLOR)
+img = cv2.imread('circle.png', cv2.IMREAD_COLOR)
+
+#img is reading
+if img is None:
+    print("Error: Could not read the image file. Check the file path.")
+    exit()
 
 # Resize the image to reduce its dimensions (e.g., 50% of the original size)
 scale_percent = 50  # Adjust this value as needed
